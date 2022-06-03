@@ -78,6 +78,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             if (context.getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE){
                 //incorporating glide into if else statements to have different placeholders depending on orientation
                 imageUrl = movie.getBackdropPath();
+                int radius = 30;
+                int margin = 10;
                 Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).into(ivPoster);
 
             }
