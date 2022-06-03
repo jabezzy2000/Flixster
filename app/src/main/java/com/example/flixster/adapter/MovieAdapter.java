@@ -14,6 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.flixster.MovieDetailsActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
@@ -80,7 +83,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 imageUrl = movie.getBackdropPath();
                 int radius = 30;
                 int margin = 10;
-                Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).into(ivPoster);
+              Glide.with(context).load(imageUrl).placeholder(R.drawable.flicks_backdrop_placeholder).into(ivPoster);
+//                Glide.with(context)
+//                        .load(imageUrl)
+//                        .transform(new CenterCrop(),new RoundedCorners(1))
+//                        .into(ivPoster); ----doesn't work either
+
+//                Glide.with(context)
+//                        .load(imageUrl)
+//                        .apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
+//                        .into(ivPoster);
 
             }
             else {
