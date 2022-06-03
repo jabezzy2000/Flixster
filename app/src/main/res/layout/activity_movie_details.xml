@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ivPos"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
     tools:context="com.example.flixster.MovieDetailsActivity">
 
     <TextView
         android:id="@+id/tvTitle"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -21,13 +23,20 @@
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rbVoteAverage"
-        android:layout_alignParentStart="true"
+        android:textStyle="italic"
+        android:layout_width="239dp"
+        android:layout_height="388dp"
+        android:layout_alignBottom="@+id/tvTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="-425dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:layout_toRightOf="@id/ivPoster"
         android:text="TextView" />
 
     <RatingBar
@@ -43,9 +52,11 @@
 
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="match_parent"
-        android:layout_height="209dp"
-        android:layout_below="@+id/tvOverview"
-        android:layout_marginTop="65dp"
+        android:layout_width="177dp"
+        android:layout_height="155dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/rbVoteAverage"
         tools:src="@tools:sample/avatars" />
 </RelativeLayout>
