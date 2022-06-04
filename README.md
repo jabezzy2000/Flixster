@@ -48,6 +48,8 @@ Describe any challenges encountered while building the app.
 - This being my first time using Java in any way, It was quite hard to complete.
 - I had an error (“… DS\_Store() is not a directory) whenever I tried to add anything new to an xml file..I had to back track to my commit the previous day when I wasn’t getting it to work.. slowed me down a bit
 
+Gif Preview:
+[App Demo Link](GIF/recording2.gif)
 
 \## Open-source libraries used
 
