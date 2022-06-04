@@ -8,6 +8,7 @@ Core Features
  ☑Implement orientation functionality
  ☑Navigate through the app's pages using Intents
 
+
 Stretch Features
  Use Glide transformations to the images displayed
  ☑Improve the user interface through styling and coloring
